@@ -1,0 +1,280 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans' sans-serif;
+    box-sizing: border-box;
+}
+
+.hero{
+    height: 100vh;/*usar el 100 de el ancho del dispositivo*/
+    width: 100%;
+    background-image: url(img/fondomar.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+
+.portfolio{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: transform .4s;
+}
+.portfolio:hover{
+    transform: scale(1.1);
+}
+span{
+    color: #FFF59D;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}/*aca los separo y les doy tamaño*/
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}/*aca los personalizo, color, fuente de letra */
+
+nav ul li a:hover{
+    color: #FFF59D;
+    transition: .4s;
+    
+}
+.btn{
+    background-color: #FFF59D;
+    color: grey;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+.contenido {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color: white;
+    margin: 10px 0px 10px;
+    font-size: 75px;
+}
+h1:hover{
+    color: #FFF59D;
+    transition: .4s;
+}
+.juanignacio{
+    cursor: pointer;
+}
+.desarrollo{
+    cursor: pointer;
+}
+.desarrollo{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.desarrollo:hover{
+    color: #FFF59D;
+    transition: .4s;
+}
+h4{
+    color: #33383d;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.actual{
+    margin-bottom: 10px;
+}
+
+.noticias form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+.noticias form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #c0b23c;
+    outline: none;
+    border-radius: 30px;
+}
+.noticias form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #FFF59D;
+    color: rgb(163, 163, 163);
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    top: 7.5px;
+    right: 8px;
+}
+
+.sobremi{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #33383d;
+}
+.sobremi img{
+    height: auto;
+    width: 600px;
+    padding-right: 30px;
+}
+.sobremi-texto{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.sobremi-texto h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.sobremi-texto h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.sobremi-texto p{
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    height: 520px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #4d4c4c15;
+    border-radius: 40px;
+    margin: 8px;
+    margin-left: 1px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+button{
+    background-color: #FFF59D;
+    color: gray;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    margin-left: 95px;
+}
+button:hover{
+    color: #FFF59D;
+    background-color: transparent;
+    border: 2px solid #FFF59D;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#mail{
+    font-size: 15px;
+}
+.contacto{
+    width: 100%;
+    height: 375px;
+    background:rgba(31, 63, 88, 0.558);
+    display: flex;/*el display flex es para poner los items uno al lado del otro*/
+    align-items: center;/*esto es para centrar los elementos en el eje Y*/
+    flex-direction: column; /*esto es para colocarlos al medio, eje x*/
+    justify-content: center;/*esto lo que hace es centrarlo en la caratula en la que estemos*/
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.contacto p{
+    color: white;
+    margin-bottom: 8px;
+    font-size: 30px;/*tamaño de la letra*/
+    font-weight: bold;/*la pone en negrita*/
+    text-transform: capitalize;
+}
+.contacto #contratame{
+    background-color: #FFF59D;
+    color: gray;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: .4s;
+    align-items: center;
+}
+.contacto #contratame:hover{
+    color: #FFF59D;
+    background-color: transparent;
+    border: 2px solid #FFF59D;
+    cursor: pointer;
+    transform: scale(1.1);
+    font-weight: bold;
+    text-transform: capitalize;
+    align-items: center;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 140px;
+    background:gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+    
+}
+footer h2{
+    margin-bottom: 20px;
+}
+footer .btn{
+    background-color: #FFF59D;
+    color: grey;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 15px;
+    transition: transform .4s;
+}
