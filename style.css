@@ -8,7 +8,7 @@
 .hero{
     height: 100vh;/*usar el 100 de el ancho del dispositivo*/
     width: 100%;
-    background-image: url(img/fondomar.jpg);
+    background-image: url("img/fondomar.jpg");
     background-size: cover;
     background-position: center;
     
