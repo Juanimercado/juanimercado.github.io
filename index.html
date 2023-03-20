@@ -1,0 +1,122 @@
+<!--70% DE LO QUE SE HA REALIZADO EN ESTE PORTFOLIO HA SIDO EXTRAIDO DE https://www.w3schools.com/-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>set.juani</title>
+        <link rel="shortcut icon" sizes="32x32" href="/Arg Programa 4.0/img/iconologo.ico">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="httos://fonts.gstatic.com">
+        <link  href="https://fonts.googleapis.com/css2?family=josefin+sans:ital,wght@0,100;0
+        ,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    <!--aca     va aun comentario-->
+    <body>
+        <!--como conectar un html con un archivo js-->
+        <script src="script.js"></script>
+
+        <div class="hero" id="hero"><!--uso un 'hero' refiriendome al header o encabezado principal-->
+            <nav class="navi_fijo">
+                <h2 class="portfolio"><span>Mi</span>Portfolio</h2>
+                <ul>
+                    <li><a href="#sobremi">Sobre Mi</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <a href="https://www.instagram.com/juanignacio.mm/" class="btn">Followme</a>
+            </nav>
+
+            <div class="contenido" id="contenido">
+                <h4>Hola, mi nombre es </h4>
+                <h1 class="juanignacio">Juan <span>Ignacio</span> </h1>
+                <h4 class="actual">Actualmente estoy iniciandome en el <span class="desarrollo">Desarrollo Web</span><br>
+                    Me veo muy motivado ya que si me propongo algo en mi cabeza hago todo por cumplirlo. <br>
+                    Tengo muy idealizado mi dia a dia en un futuro, desarrollando,
+                    poniendole mi toque <br>de personalizacion a la idea del cliente para
+                    poder lograr un acabado de excelencia; <br>trabajando remotamente, 
+                    y en lo posible poder asistir a la empresa para la cual <br>llevare a cabo mis desarrollos para asi,
+                    generar nuevas relaciones, tanto de trabajo como de compañerismo.
+                </h4>
+                
+            </div>
+        </div>
+
+        <!--aca empieza la parte de SOBRE MI-->
+        <section class="sobremi" id="sobremi">
+            <div class="main">
+                <img src="img/profilecopia.jpeg">
+                <div class="sobremi-texto">
+                    <h2>Sobre Mi </h2>
+                    <h5> <span>Diseñador</span> de Páginas Web</h5>
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat qui fugiat quasi,
+                        asperiores ducimus voluptate blanditiis doloremque illum sint magni incidunt at si
+                        accusamus natus maiores commodi! Architecto, earum praesentium.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit incidunt blanditiis 
+                        vel sed voluptatem nobis, deleniti iusto. Aperiam corporis incidunt earum. Consequatur 
+                        facilis nostrum deserunt obcaecati iste repudiandae at iusto.</p>
+                        <!--<button type="button">Contactame</button>--> 
+                </div>
+            </div>
+        </section>
+        <!--aca comienza la parte de contacto-->
+        
+            <div class="contacto" id="contacto">
+                <p>Creemos tu página web juntos!</p>
+                <div class="noticias">
+                    <form action="">
+                        <input type="email" name="email" id="mail" placeholder="Mail">
+                        <input type="submit" name="submit" value="Contratame" class="btn" onclick="alertar('Gracias! Me pondre en contacto a la brevedad');">
+
+                        <!--Aca puedo agregar un eventio qyue diga muchas gracias por la suscripcion
+                        <i class="fa-sharp fa-solid fa-envelope-open-dollar"></i>-->
+                        <!--puedo hacer un cartel de bienvenida y que desaparezca despues de hacer cvlick en cyualquier lado-->
+                    </form>
+                    
+                    <script type="text/javascript">
+                        function alertar(texto) {
+                            alert(texto);
+                        }
+                    </script>
+
+                </div>
+                <!--<button type="mibutton" id="contratame">Contratame</button>
+                    <div id="miniform" class="form">
+                    <div class="form-content">
+                        <span class="cerrar">&times;</span>
+                        <p>Ve al inicio y rellena el campo de Mail. Gracias! <br>Me pondre en contacto a la brevedad.</p>
+                    </div>
+                </div>-->
+            </div>
+        
+        <!--FOOTER-->
+        <footer>
+            <p> <span>{</span> Juan Ignacio Mercado <span>}</span> </p>
+            <h2 class="titulo-final">&copy; juanidevDesign | Juan Ignacio Mercado</h2>
+            <a href="#hero" class="btn">Incio</a>
+        </footer>      
+    </body>
+</html>
+
+<!--<img src="https://wallup.net/wp-content/uploads/2017/11/17/231329-house-Cinque_Terre-Italy-748x421.jpg" alt="press Ctrl and R" height="1000px" width="1440px"/>-->
+<!--src es la ruta de la imagen y alt es el texto por si no aparece-->
+<!--<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">-->
